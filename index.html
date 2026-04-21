@@ -1,14 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="az">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matanat A</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-
 <body>
-    <h1>Matanat A</h1>
-</body>
+    <header class="site-header">
+        <div class="topbar">
+            <a class="brand" href="index.html" aria-label="Matanat ana sehife">
+                <img src="assets/images/logo.png" alt="Matanat A logo">
+            </a>
 
+            <div class="topbar-tools">
+                <button class="icon-btn" type="button" aria-label="Ana sehife">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 11.5L12 4l9 7.5"></path>
+                        <path d="M6.5 10.5V20h11V10.5"></path>
+                    </svg>
+                </button>
+
+                <button class="icon-btn" type="button" aria-label="Printer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="6" y="3" width="12" height="5"></rect>
+                        <rect x="4" y="9" width="16" height="8" rx="1.5"></rect>
+                        <rect x="7" y="14" width="10" height="7"></rect>
+                    </svg>
+                </button>
+
+                <button class="lang-btn" type="button" aria-label="Dil secimi">
+                    <span>AZ</span>
+                    <span class="flag-az" aria-hidden="true"></span>
+                </button>
+
+                <form class="search" action="#" method="get" role="search">
+                    <input type="search" placeholder="Axtar" aria-label="Axtar">
+                    <button type="submit" aria-label="Axtaris et">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <line x1="16" y1="16" x2="21" y2="21"></line>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNavList">
+            MENU
+        </button>
+
+        <nav class="main-nav" aria-label="Esas menyu">
+            <ul id="mainNavList" class="main-nav-list">
+                <li class="nav-item has-dropdown">
+                    <a href="pages/about.html">HAQQIMIZDA <span class="nav-arrow" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/about.html">Sirket haqqinda</a></li>
+                        <li><a href="pages/about.html">Missiya ve vizyon</a></li>
+                        <li><a href="pages/about.html">Sertifikatlar</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-dropdown">
+                    <a href="pages/products.html">MƏHSULLAR <span class="nav-arrow" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/products.html">Gipskarton</a></li>
+                        <li><a href="pages/products.html">Quru qarisiqlar</a></li>
+                        <li><a href="pages/products.html">Astar ve boyalar</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-dropdown">
+                    <a href="#">USTALAR KLUBU <span class="nav-arrow" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Qeydiyyat</a></li>
+                        <li><a href="#">Telimler</a></li>
+                        <li><a href="#">Kampaniyalar</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-dropdown">
+                    <a href="#">MÜŞTERİ XİDMƏTLƏRİ <span class="nav-arrow" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sual-cavab</a></li>
+                        <li><a href="#">Dilerler</a></li>
+                        <li><a href="#">Texniki destek</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-dropdown">
+                    <a href="#">İNSAN RESURSLARI <span class="nav-arrow" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Vakansiyalar</a></li>
+                        <li><a href="#">CV gonder</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-dropdown">
+                    <a href="pages/media.html">MEDİA <span class="nav-arrow" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/media.html">Xeberler</a></li>
+                        <li><a href="pages/media.html">Fotoqalereya</a></li>
+                        <li><a href="pages/media.html">Videolar</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="pages/contact.html">ƏLAQƏ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-slider" aria-label="Matanat banner slayderi">
+            <div class="slide is-active">
+                <img src="assets/images/slider1.jpg" alt="Matanat slider 1">
+            </div>
+            <div class="slide">
+                <img src="assets/images/slider2.jpg" alt="Matanat slider 2">
+            </div>
+            <div class="slide">
+                <img src="assets/images/slider3.jpg" alt="Matanat slider 3">
+            </div>
+
+            <div class="slider-dots" aria-label="Slayd secimi">
+                <button class="dot is-active" type="button" data-slide="0" aria-label="Slayd 1"></button>
+                <button class="dot" type="button" data-slide="1" aria-label="Slayd 2"></button>
+                <button class="dot" type="button" data-slide="2" aria-label="Slayd 3"></button>
+            </div>
+        </section>
+
+        <section class="promo-section" aria-label="Tebligat materiallari">
+            <div class="section-title-wrap">
+                <span class="section-line" aria-hidden="true"></span>
+                <h2>TƏBLİĞAT MATERİALLARI</h2>
+                <span class="section-line" aria-hidden="true"></span>
+            </div>
+
+            <div class="promo-grid">
+                <article class="promo-card">
+                    <img src="assets/images/news1.jpeg" alt="Press relizler">
+                    <div class="promo-card-body">
+                        <h3>PRESS RELİZLƏR</h3>
+                        <h4>MATANAT A USTALAR KLUBU LƏNKƏRANDA</h4>
+                        <p>Matanat A Sirketler Qrupu novbeti maariflendirme tedbirini ugurla heyata kecirdi.</p>
+                        <a href="#">ƏTRAFLI...</a>
+                    </div>
+                </article>
+
+                <article class="promo-card">
+                    <img src="assets/images/news2.jpg" alt="Ustalar klubu">
+                    <div class="promo-card-body">
+                        <h3>USTALAR KLUBU</h3>
+                        <h4>KLUBUN FƏALİYYƏTİ</h4>
+                        <p>Ustalar klubu Azerbaycanda ilk defe olaraq butun ustalari bir araya toplayan platformadir.</p>
+                        <a href="#">ƏTRAFLI...</a>
+                    </div>
+                </article>
+
+                <article class="promo-card">
+                    <img src="assets/images/news3.jpg" alt="Musteri xidmetleri">
+                    <div class="promo-card-body">
+                        <h3>MÜŞTƏRİ XİDMƏTLƏRİ</h3>
+                        <h4>SERVİS VƏ ÇATDIRILMA</h4>
+                        <p>Biz Azerbaycanin her yerinde movcud olmaq prinsipini esas tutaraq butun regionlara catiriq.</p>
+                        <a href="#">ƏTRAFLI...</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card product-feature">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/products-1.png" alt="Mehsul qablasdirilmasi">
+                    </div>
+
+                    <div class="product-content">
+                        <h3>PROFESSİONALLARIN SEÇİMİ</h3>
+                        <p>Saquli ve ufuqi sethlerde keramik ve diger uzluk pliteler yapisdiricisi. Yuksək keyfiyyetli qarisiqla dayaniqli ve rahat istifade.</p>
+                        <a class="feature-btn" href="#">ƏTRAFLI <span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <article class="feature-card calc-feature">
+                    <h3>MƏHSUL SƏRFİYYATI HESABLAYICISI</h3>
+                    <img src="assets/images/calc.png" alt="Kalkulyator">
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Sayt footeri">
+        <div class="footer-social-row">
+            <div class="footer-social-inner">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <img src="assets/images/fb.png" alt="Facebook">
+                </a>
+                <a href="#" class="social-link" aria-label="YouTube">
+                    <img src="assets/images/yt.png" alt="YouTube">
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <img src="assets/images/insta.png" alt="Instagram">
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <img src="assets/images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="#" class="footer-subscribe">XƏBƏRLƏRƏ ABUNƏ OL</a>
+            </div>
+        </div>
+
+        <div class="footer-divider" aria-hidden="true"></div>
+
+        <div class="footer-menu-wrap">
+            <div class="footer-menu-grid">
+                <div class="footer-col">
+                    <h3>HAQQIMIZDA</h3>
+                    <a href="#">ŞİRKƏT HAQQINDA</a>
+                    <a href="#">VİZYON VƏ MİSSİYAMIZ</a>
+                    <a href="#">NAİLİYYƏTLƏRİMİZ</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>MƏHSULLAR</h3>
+                    <a href="#">İNŞAAT SİSTEMLƏRİ</a>
+                    <a href="#">FASAD SİSTEMLƏRİ</a>
+                    <a href="#">YER-DÖŞƏMƏ SİSTEMLƏRİ</a>
+                    <a href="#">QATQI SİSTEMLƏRİ</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>USTALAR KLUBU</h3>
+                    <a href="#">KLUBUN FƏALİYYƏTİ</a>
+                    <a href="#">GÖRÜŞ VƏ SEMİNARLAR</a>
+                    <a href="#">KAMPANİYALAR</a>
+                    <a href="#">KLUBA ÜZV OL</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>MÜŞTƏRİ XİDMƏTLƏRİ</h3>
+                    <a href="#">SERVİS VƏ ÇATDIRILMA</a>
+                    <a href="#">UDUŞ KAMPANİYALARI</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>İNSAN RESURSLARI</h3>
+                    <a href="#">NƏ ÜÇÜN MƏTANƏT A</a>
+                    <a href="#">VAKANSİYALAR</a>
+                    <a href="#">CV GÖNDƏR</a>
+                </div>
+
+                <div class="footer-col footer-col-short">
+                    <a href="#">ƏLAQƏ</a>
+                    <a href="#">PRESS RELİZLƏR</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 MƏTANƏT A</p>
+        </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/slider.js"></script>
+</body>
 </html>

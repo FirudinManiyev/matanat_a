@@ -1,1 +1,4 @@
-/* css */
+@import url("./base.css");
+@import url("./header-nav.css");
+@import url("./slider.css");
+@import url("./promo.css");
